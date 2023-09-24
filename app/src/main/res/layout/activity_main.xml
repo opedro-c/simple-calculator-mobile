@@ -12,13 +12,10 @@
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="82dp"
-        android:layout_marginTop="4dp"
         android:background="@color/primary"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-3dp">
 
     </LinearLayout>
 
@@ -35,20 +32,25 @@
         app:layout_constraintTop_toTopOf="@+id/title_bar" />
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_bar">
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:tabIndicatorColor="@color/primary"
+        app:tabSelectedTextColor="@color/primary">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_simple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tab_1"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="87dp" />
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="79dp" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_grade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tab_2"
@@ -56,5 +58,16 @@
             tools:layout_editor_absoluteY="235dp" />
 
     </com.google.android.material.tabs.TabLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="406dp"
+        android:layout_height="601dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
