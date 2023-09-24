@@ -141,23 +141,6 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button32"
-        android:layout_width="55dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:text=","
-        app:cornerRadius="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button33"
-        app:layout_constraintTop_toBottomOf="@+id/button28"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
         android:id="@+id/button34"
         android:layout_width="55dp"
         android:layout_height="49dp"
@@ -171,7 +154,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button30"
         app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="289dp" />
+        tools:layout_editor_absoluteX="281dp" />
 
     <Button
         android:id="@+id/button33"
@@ -189,6 +172,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button34"
         app:layout_constraintTop_toBottomOf="@+id/button29"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="55dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text=","
+        app:cornerRadius="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button33"
+        app:layout_constraintTop_toBottomOf="@+id/button28"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
