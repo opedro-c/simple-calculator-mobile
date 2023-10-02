@@ -5,7 +5,7 @@
     android:id="@+id/simple_calculator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentSimpleCalculator">
+    tools:context=".fragments.FragmentSimpleCalculator">
 
     <Button
         android:id="@+id/button_div"

@@ -5,12 +5,12 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentGradeCalculator">
+    tools:context=".fragments.FragmentGradeCalculator">
 
     <!-- TODO: Update blank fragment layout -->
 
     <EditText
-        android:id="@+id/nota_1"
+        android:id="@+id/grade_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
@@ -19,22 +19,22 @@
         android:hint="@string/hintNota1"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <EditText
-        android:id="@+id/nota_2"
+        android:id="@+id/grade_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:hint="@string/hintNota2"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota_1" />
+        app:layout_constraintTop_toBottomOf="@+id/grade_1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_calculate_average"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
@@ -42,26 +42,37 @@
         android:text="Calcular"
         app:backgroundTint="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota_3" />
+        app:layout_constraintTop_toBottomOf="@+id/grade_3" />
 
     <EditText
-        android:id="@+id/nota_3"
+        android:id="@+id/grade_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:hint="@string/hintNota3"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota_2" />
+        app:layout_constraintTop_toBottomOf="@+id/grade_2" />
 
     <TextView
-        android:id="@+id/resultado"
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="204dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="88dp" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/situation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/grade_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

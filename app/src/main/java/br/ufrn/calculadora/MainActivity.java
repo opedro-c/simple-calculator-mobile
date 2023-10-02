@@ -5,10 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.view.View;
 
-import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
+
+import br.ufrn.calculadora.fragments.FragmentGradeCalculator;
+import br.ufrn.calculadora.fragments.FragmentSimpleCalculator;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package br.ufrn.calculadora;
+package br.ufrn.calculadora.fragments;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import br.ufrn.calculadora.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragmentGradeCalculator#newInstance} factory method to
+ * Use the {@link FragmentSimpleCalculator#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentGradeCalculator extends Fragment {
+public class FragmentSimpleCalculator extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class FragmentGradeCalculator extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public FragmentGradeCalculator() {
+    public FragmentSimpleCalculator() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class FragmentGradeCalculator extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentGradeCalculator.
+     * @return A new instance of fragment FragmentSimpleCalculator.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentGradeCalculator newInstance(String param1, String param2) {
-        FragmentGradeCalculator fragment = new FragmentGradeCalculator();
+    public static FragmentSimpleCalculator newInstance(String param1, String param2) {
+        FragmentSimpleCalculator fragment = new FragmentSimpleCalculator();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class FragmentGradeCalculator extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_grade_calculator, container, false);
+        return inflater.inflate(R.layout.fragment_simple_calculator, container, false);
     }
 }
