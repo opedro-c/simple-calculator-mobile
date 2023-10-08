@@ -8,11 +8,28 @@
     tools:context=".fragments.FragmentSimpleCalculator">
 
     <Button
+        android:id="@+id/button_c"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="C"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="48dp"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toStartOf="@+id/button_0"
+        app:layout_constraintTop_toBottomOf="@+id/button_7" />
+
+    <Button
         android:id="@+id/button_div"
         android:layout_width="55dp"
         android:layout_height="49dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="68dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -24,27 +41,43 @@
         app:layout_constraintTop_toBottomOf="@+id/text_res" />
 
     <Button
-        android:id="@+id/button_exp"
+        android:id="@+id/button_sum"
         android:layout_width="55dp"
         android:layout_height="49dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="68dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
-        android:text="^"
+        android:text="+"
         app:backgroundTint="@color/primary"
         app:cornerRadius="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_fact"
-        app:layout_constraintTop_toBottomOf="@+id/text_res" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sub" />
+
+    <Button
+        android:id="@+id/button_mult"
+        android:layout_width="55dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="X"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_div" />
 
     <Button
         android:id="@+id/button_sub"
         android:layout_width="55dp"
         android:layout_height="49dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginEnd="68dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -60,7 +93,7 @@
         android:layout_width="55dp"
         android:layout_height="49dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="16dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -92,7 +125,7 @@
         android:layout_width="55dp"
         android:layout_height="49dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -100,82 +133,11 @@
         android:text="9"
         app:backgroundTint="@color/primary"
         app:cornerRadius="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_sum"
+        app:layout_constraintEnd_toStartOf="@+id/button_sub"
         app:layout_constraintTop_toBottomOf="@+id/button_6" />
 
     <Button
-        android:id="@+id/button_sum"
-        android:layout_width="55dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="72dp"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:text="+"
-        app:backgroundTint="@color/primary"
-        app:cornerRadius="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_sub" />
-
-    <Button
         android:id="@+id/button_0"
-        android:layout_width="55dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:text="0"
-        app:backgroundTint="@color/primary"
-        app:cornerRadius="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_com"
-        app:layout_constraintTop_toBottomOf="@+id/button_7"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button_eq"
-        android:layout_width="55dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="72dp"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:text="="
-        app:backgroundTint="@color/primary"
-        app:cornerRadius="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_sum"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button_del"
-        android:layout_width="55dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        app:backgroundTint="@color/primary"
-        app:cornerRadius="48dp"
-        app:icon="@android:drawable/ic_input_delete"
-        app:iconGravity="textStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_eq"
-        app:layout_constraintTop_toBottomOf="@+id/button_9"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button_com"
         android:layout_width="55dp"
         android:layout_height="49dp"
         android:layout_marginTop="16dp"
@@ -184,36 +146,53 @@
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
-        android:text=","
+        android:text="0"
         app:backgroundTint="@color/primary"
         app:cornerRadius="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_del"
-        app:layout_constraintTop_toBottomOf="@+id/button_8"
+        app:layout_constraintTop_toBottomOf="@+id/button_7"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button_fact"
-        android:layout_width="55dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/button_eq"
+        android:layout_width="269dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
-        android:text="!"
+        android:text="="
         app:backgroundTint="@color/primary"
         app:cornerRadius="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_div"
-        app:layout_constraintTop_toBottomOf="@+id/text_res" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_del" />
+
+    <Button
+        android:id="@+id/button_del"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="48dp"
+        app:icon="@android:drawable/ic_input_delete"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toStartOf="@+id/button_sum"
+        app:layout_constraintTop_toBottomOf="@+id/button_8" />
 
     <Button
         android:id="@+id/button_1"
         android:layout_width="55dp"
         android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -222,7 +201,7 @@
         app:backgroundTint="@color/primary"
         app:cornerRadius="48dp"
         app:layout_constraintEnd_toStartOf="@+id/button_2"
-        app:layout_constraintTop_toBottomOf="@+id/button_sqrt" />
+        app:layout_constraintTop_toBottomOf="@+id/text_res" />
 
     <Button
         android:id="@+id/button_5"
@@ -245,7 +224,7 @@
         android:layout_width="55dp"
         android:layout_height="49dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -253,14 +232,14 @@
         android:text="6"
         app:backgroundTint="@color/primary"
         app:cornerRadius="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_sub"
+        app:layout_constraintEnd_toStartOf="@+id/button_mult"
         app:layout_constraintTop_toBottomOf="@+id/button_3" />
 
     <Button
         android:id="@+id/button_2"
         android:layout_width="55dp"
         android:layout_height="49dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="16dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
@@ -270,14 +249,14 @@
         app:backgroundTint="@color/primary"
         app:cornerRadius="48dp"
         app:layout_constraintEnd_toStartOf="@+id/button_3"
-        app:layout_constraintTop_toBottomOf="@+id/button_exp" />
+        app:layout_constraintTop_toBottomOf="@+id/text_res" />
 
     <Button
         android:id="@+id/button_3"
         android:layout_width="55dp"
         android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -285,15 +264,15 @@
         android:text="3"
         app:backgroundTint="@color/primary"
         app:cornerRadius="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_mult"
-        app:layout_constraintTop_toBottomOf="@+id/button_fact" />
+        app:layout_constraintEnd_toStartOf="@+id/button_div"
+        app:layout_constraintTop_toBottomOf="@+id/text_res" />
 
     <Button
         android:id="@+id/button_4"
         android:layout_width="55dp"
         android:layout_height="49dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="16dp"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -304,43 +283,11 @@
         app:layout_constraintEnd_toStartOf="@+id/button_5"
         app:layout_constraintTop_toBottomOf="@+id/button_1" />
 
-    <Button
-        android:id="@+id/button_sqrt"
-        android:layout_width="55dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:text="√"
-        app:backgroundTint="@color/primary"
-        app:cornerRadius="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_exp"
-        app:layout_constraintTop_toBottomOf="@+id/text_res" />
-
-    <Button
-        android:id="@+id/button_mult"
-        android:layout_width="55dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="72dp"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:text="X"
-        app:backgroundTint="@color/primary"
-        app:cornerRadius="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_div" />
-
     <TextView
         android:id="@+id/text_res"
         android:layout_width="279dp"
         android:layout_height="41dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="72dp"
         android:text="0"
         android:textAlignment="textEnd"
         android:textSize="34sp"
@@ -348,4 +295,5 @@
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
